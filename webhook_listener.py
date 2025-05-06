@@ -27,7 +27,7 @@ GIT_BRANCH = "main"
 
 if not WEBHOOK_SECRET or WEBHOOK_SECRET == "ВАШ_ОЧЕНЬ_СЛОЖНЫЙ_СЕКРЕТ_ЗДЕСЬ":
     logging.critical("WEBHOOK_SECRET не установлен или используется значение по умолчанию! Установите надежный секрет.")
-    # В продакшене лучше прервать выполнение: sys.exit(1)
+    sys.exit(1)
 
 app = Flask(__name__)
 
