@@ -3,8 +3,6 @@ venv/
 __pycache__/
 *.pyc
 
-webhook_listener.py
-
 # Файл с секретами
 .env
 

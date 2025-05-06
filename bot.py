@@ -35,7 +35,7 @@ async def command_start_handler(message: Message) -> None:
     """
     user_name = message.from_user.full_name
     logging.info(f"Пользователь {user_name} (ID: {message.from_user.id}) запустил бота.")
-    await message.answer(f"Привет, {hbold(user_name)}! хуила")
+    await message.answer(f"Привет, {hbold(user_name)}! хуила!")
     await message.answer("Я простой эхо-бот на aiogram 3. Отправь мне сообщение, и я его повторю.")
 
 # Обработчик для всех остальных текстовых сообщений (эхо)
